@@ -42,32 +42,26 @@ export const FormExample = () => {
 					React hook form & Zod
 				</h2>
 
-				<div>
-					<Input
-						placeholder='name'
-						label='Name'
-						zodErrors={errors}
-						{...register('name')}
-					/>
-				</div>
+				<Input
+					placeholder='name'
+					label='Name'
+					zodErrors={errors}
+					{...register('name')}
+				/>
 
-				<div>
-					<Input
-						placeholder='email'
-						label='Email'
-						zodErrors={errors}
-						{...register('email')}
-					/>
-				</div>
+				<Input
+					placeholder='email'
+					label='Email'
+					zodErrors={errors}
+					{...register('email')}
+				/>
 
-				<div>
-					<Input
-						placeholder='password'
-						label='Password'
-						zodErrors={errors}
-						{...register('password')}
-					/>
-				</div>
+				<Input
+					placeholder='password'
+					label='Password'
+					zodErrors={errors}
+					{...register('password')}
+				/>
 
 				<div className='w-full flex justify-center mt-6'>
 					<Button type='submit'>Submit</Button>
